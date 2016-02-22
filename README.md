@@ -30,17 +30,21 @@ Simple init.el which will initializa el-get package
     (package-initialize)
 
 ## General customization
-The following customizations can be appended to the init.el one by one.
-
-hide menu bar
+The following customizations can be appended to the init.el one by one.   
+Hide menu bar
 
     ;; hide menu bar
     (menu-bar-mode -1)
 
-No backup files
+No backup files   
 
     ;; Prevent Emacs from making backup files
     (setq make-backup-files nil)
+
+Change key binding of set-mark-command to ESC-SPC(from C-SPC)
+
+    ;; change binding of C-SPC 'set-mark-command
+    (global-set-key (kbd "M-SPC") 'set-mark-command)
 
 ## yaml-mode
 To install yaml-mode
@@ -55,8 +59,9 @@ To activate in init.el
     (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
     (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
     
-Optionally bind C-m to  newline-and-indent
+Optionally bind C-m to newline-and-indent
 
+    ;; bind C-m to newline-and-indent
     (add-hook 'yaml-mode-hook
       '(lambda ()
         (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
