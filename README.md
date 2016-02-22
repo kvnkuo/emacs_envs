@@ -2,8 +2,7 @@
 configuraing emacs for various developing environments
 
 ## install el-get
-Make sure git is installed.
-
+Make sure git is installed.   
 Run the following in emacs buffer(copy=paste to scratch buffer, C-j to run it) to initialize the installation
 
     (url-retrieve
@@ -14,7 +13,7 @@ Run the following in emacs buffer(copy=paste to scratch buffer, C-j to run it) t
 
 Then, Use 
 
-M-x el-get-install 
+M-x el-get-install   
 package:el-get
 
 to install el-get package. The package will be installed in ~/.emacs.d/el-get/el-get
@@ -46,4 +45,4 @@ No backup files
 
 
 ## Reference
-> https://github.com/dimitri/el-get
+* https://github.com/dimitri/el-get
