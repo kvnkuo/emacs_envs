@@ -13,8 +13,8 @@ Run the following in emacs buffer(copy=paste to scratch buffer, C-j to run it) t
 
 Then, Use 
 
-M-x el-get-install   
-package:el-get
+    M-x el-get-install   
+    package: el-get
 
 to install el-get package. The package will be installed in ~/.emacs.d/el-get/el-get
 
@@ -46,7 +46,7 @@ No backup files
 To install yaml-mode
 
     M-x el-get-install   
-    package:el-get
+    package: yaml-mode
 
 To activate in init.el
 
