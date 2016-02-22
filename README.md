@@ -42,7 +42,25 @@ No backup files
     ;; Prevent Emacs from making backup files
     (setq make-backup-files nil)
 
+## yaml-mode
+To install yaml-mode
 
+    M-x el-get-install   
+    package:el-get
+
+To activate in init.el
+
+    ;; enable yaml-mode
+    (require 'yaml-mode)
+    (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+    (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
+    
+Optionally bind C-m to  newline-and-indent
+
+    (add-hook 'yaml-mode-hook
+      '(lambda ()
+        (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
 
 ## Reference
 * https://github.com/dimitri/el-get
+* https://github.com/yoshiki/yaml-mode
