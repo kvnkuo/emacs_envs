@@ -20,7 +20,7 @@ package:el-get
 to install el-get package. The package will be installed in ~/.emacs.d/el-get/el-get
 
 
-## Create init.el in .emacs.d
+## Create init.el file in ~/.emacs.d directory
 Simple init.el which will initializa el-get package
 
     (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
