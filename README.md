@@ -1,5 +1,5 @@
 # emacs_envs
-configuraing emacs for various developing environments
+Configuring emacs for various development environments
 
 ## install el-get
 Make sure git is installed.   
