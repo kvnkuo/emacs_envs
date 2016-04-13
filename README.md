@@ -41,6 +41,13 @@ Change key binding of set-mark-command to ESC-SPC(from C-SPC)
     ;; change binding of C-SPC 'set-mark-command
     (global-set-key (kbd "M-SPC") 'set-mark-command)
 
+Show parentheses
+
+    ;; deactivate the small delay before showing a matching parenthesis
+    (setq show-paren-delay 0)
+    ;; show parentheses
+    (show-paren-mode 1)
+
 ## yaml-mode
 To install yaml-mode
 
