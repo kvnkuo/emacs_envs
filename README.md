@@ -11,12 +11,7 @@ Run the following in emacs buffer(copy=paste to scratch buffer, C-j to run it) t
         (goto-char (point-max))
         (eval-print-last-sexp)))
 
-Then, Use 
-
-    M-x el-get-install   
-    package: el-get
-
-to install el-get package. The package will be installed in ~/.emacs.d/el-get/el-get
+The package will be installed in ~/.emacs.d/el-get/el-get
 
 
 ## Create init.el file in ~/.emacs.d directory
